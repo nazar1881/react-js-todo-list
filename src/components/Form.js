@@ -17,11 +17,6 @@ export const Form = () => {
                 alert.show('Something wrong', 'danger')
             })
             ///alert.show('Note was created', 'success')
-            /*firebase.removeNote(value.trim()).then(() => {
-                alert.show('Note was removed', 'danger')
-            }).catch(() => {
-                alert.show('Something wrong', 'danger')
-            })*/
             setValue('')
         } else {
             alert.show('Enter text')

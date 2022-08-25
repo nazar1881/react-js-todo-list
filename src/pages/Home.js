@@ -9,7 +9,7 @@ export const Home = () => {
     /*const notes = new Array(3)
     .fill('')
     .map((_, i) => ({id:i, title: `Note ${i+1}`}))*/
-    const {loading, notes, fetchNotes, removeNote} = useContext(FirebaseContext)
+    const {loading, notes, fetchNotes, removeNote, editNote, stateOfNote} = useContext(FirebaseContext)
 
     useEffect(() => {
         fetchNotes()
@@ -24,7 +24,7 @@ export const Home = () => {
 
         {loading 
         ? <Loader/>
-        : <Notes notes={notes} onRemove={removeNote}/>
+        : <Notes notes={notes} onRemove={removeNote} onEditNote={editNote} stateOfNote={stateOfNote}/>
         }
 
     </Fragment>

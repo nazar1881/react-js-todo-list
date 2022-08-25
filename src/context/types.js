@@ -4,3 +4,6 @@ export const SHOW_LOADER = 'SHOW_LOADER';
 export const ADD_NOTE = 'ADD_NOTE';
 export const FETCH_NOTES = 'FETCH_NOTES';
 export const REMOVE_NOTE = 'REMOVE_NOTE';
+export const EDIT_NOTE = 'EDIT_NOTE';
+export const DONE_NOTE = 'DONE_NOTE';
+export const NOT_DONE_NOTE = 'NOT_DONE_NOTE';
